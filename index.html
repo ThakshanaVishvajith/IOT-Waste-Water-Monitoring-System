@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Dashboard</title>
+
+  <!-- Montserrat Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="grid-container">
+
+    <!-- Main -->
+    <main class="main-container">
+      <div class="main-title">
+        <h2>WASTE WATER MONITORING SYSTEM</h2>
+      </div>
+
+      <div class="main-cards">
+
+        <div class="card">
+          <div class="card-inner">
+            <h3>TURBUDITY</h3>
+            <span class="material-icons-outlined">science</span>
+          </div>
+          <h1 id="tub">Max 150 NTU</h1>
+        </div>
+
+        <div class="card">
+          <div class="card-inner">
+            <h3>TOTAL DISSOLVED SOLIDS</h3>
+            <span class="material-icons-outlined">opacity</span>
+          </div>
+          <h1 id="tds">Max 1000 mg/L</h1>
+        </div>
+
+        <div class="card">
+          <div class="card-inner">
+            <h3>PH</h3>
+            <span class="material-icons-outlined">biotech</span>
+          </div>
+          <h1 id="ph"> Within 6.5 - 8.5</h1>
+        </div>
+
+        <div class="card">
+          <div class="card-inner">
+            <h3>TEMPERATURE</h3>
+            <span class="material-icons-outlined">thermostat</span>
+          </div>
+          <h1 id="temp"> Below 40 Celsius</h1>
+        </div>
+
+      </div>
+
+      <div class="charts">
+
+        <div class="charts-card">
+          <h2 class="chart-title">Turbudity</h2>
+          <div id="turbudity-area-chart"></div>
+        </div>
+
+        <div class="charts-card">
+          <h2 class="chart-title">Total Dissolved Solids</h2>
+          <div id="tds-area-chart"></div>
+        </div>
+
+      </div>
+
+      <div class="charts">
+
+        <div class="charts-card">
+          <h2 class="chart-title">PH</h2>
+          <div id="ph-area-chart"></div>
+        </div>
+
+        <div class="charts-card">
+          <h2 class="chart-title">Temperature</h2>
+          <div id="temperature-area-chart"></div>
+        </div>
+
+      </div>
+
+      <div class="charts-card">
+        <h2 class="chart-title">Condition</h2>
+        <div id="condition-area-chart"></div>
+      </div>
+      
+    </main>
+    <!-- End Main -->
+
+  </div>
+
+  <!-- Scripts -->
+  <!-- ApexCharts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+  <!-- Custom JS -->
+  <script type="module" src="js/scripts.js"></script>
+</body>
+
+</html>

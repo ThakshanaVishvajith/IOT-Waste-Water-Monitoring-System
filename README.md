@@ -1,6 +1,3 @@
-# IOT-Waste-Water-Monitoring-System
-
-
 # Waste Water Monitoring System
 
 This is a web dashboard that displays various parameters of waste water quality, such as turbidity, total dissolved solids, pH, and temperature. It uses HTML, CSS, and JavaScript to create a responsive and interactive user interface. It also uses ApexCharts to render area charts for each parameter.
